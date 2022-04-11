@@ -68,7 +68,7 @@ function isHeadingRow (tr) {
      parentNode.nodeName === 'TBODY') {
     tableNode = parentNode.parentNode
   }
-  return (tableNode.nodeName === 'TABLE' && tableNode.rows[0] === tr)
+  return (tableNode.nodeName === 'TABLE' && tableNode.querySelector('tr') === tr)
 }
 
 function cell (content, node) {
